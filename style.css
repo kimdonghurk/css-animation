@@ -1,0 +1,193 @@
+/*
+	1. background색을 원하는 색으로 넣어주세요.
+	
+	2. 새의 몸통을 원하는대로 꾸며주세요.
+	- 센터정렬하면서 중앙보다 살짝 더 아래 위치하게 해주세요.
+
+*/
+
+body{background: #87ceeb;}
+
+.bird{
+	width: 1000px;
+	height: 1000px;
+	margin: 20% 40% 40% 40%;
+	overflow: hidden;
+	
+	position: relative;
+	
+	animation: birds 3s ease-out infinite normal;
+}
+
+
+.bird-body{
+	width: 200px;
+	height: 200px;
+	background: #fff;
+	
+	
+	border-radius: 60% 60% 20px 20px;
+	
+	position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+}
+
+
+
+.wing-left{
+	width: 120px;
+	height: 150px;
+	background: #fa970a;
+	border-bottom: 5px solid yellow;
+	border-radius: 60% 0 60% 0;
+
+	position: absolute;
+	top:480px;
+	left:280px;
+}
+.wing-right{
+	width: 120px;
+	height: 150px;
+	background: #fa970a;
+	border-bottom: 5px solid yellow;
+	border-radius: 0 60% 0 60%;
+
+	position: absolute;
+	top: 480px;
+	left: 600px;
+}
+
+.eye-left{
+	width: 20px;
+	height: 20px;
+	background: #000;
+	border-radius: 100%;
+
+	position: absolute;
+	top: 460px;
+	left: 462px;
+}
+.eye-right{
+	width: 20px;
+	height: 20px;
+	background: #000;
+	border-radius: 100%;
+
+	position: absolute;
+	top: 460px;
+	left: 512px;
+}
+
+.eye-blueleft{
+	width: 16px;
+	height: 15px;
+	background-color: blue;
+	border-radius: 60% 60% 0 0;
+	
+	position: absolute;
+	top: 482px;
+	left: 464px;
+}
+
+.eye-blueright{
+	width: 16px;
+	height: 15px;
+	background-color: blue;
+	border-radius: 60% 60% 0 0;
+	
+	position: absolute;
+	top: 482px;
+	left: 514px;
+}
+
+
+.noise{
+	width: 25px;
+	height: 25px;
+	background: #fa970a;
+	border-radius: 0 0 100%;
+
+	transform: rotate(-135deg);
+
+	position: absolute;
+	top: 500px;
+	left: 485px;
+}
+
+.mouse{
+	width: 13px;
+	height: 13px;
+	background: red;
+	border-radius: 100%;
+
+	position: absolute;
+	top: 530px;
+	left: 491px;
+	
+}
+
+.hair1{
+	width: 40px;
+	height: 100px;
+	background: yellow;
+	border-top: 5px solid #f9b4f3;
+	border-right: 5px solid #f9b4f3;
+	border-radius: 20px 0 20px 0;
+
+	position: absolute;
+	top: 310px;
+	left: 430px;
+	transform: rotate(-30deg);
+}
+
+.hair2{
+	width: 40px;
+	height: 100px;
+	background: green;
+	border-top: 5px solid #fff;
+	border-right: 5px solid #fff;
+	border-radius: 20px 0 20px 0;
+
+	position: absolute;
+	top: 310px;
+	left: 470px;
+}
+
+.hair3{
+	width: 40px;
+	height: 100px;
+	background: #f9b4f3;
+	border-top: 5px solid yellow;
+	border-right: 5px solid yellow;
+	border-radius: 20px 0 20px 0;
+
+	position: absolute;
+	top: 310px;
+	left: 510px;
+	transform: rotate(30deg);
+}
+
+.oner{
+	width: 50px;
+	height: 80px;
+	background: red;
+
+	border-radius: 100% 100% 0 0;
+
+	position: absolute;
+	top: 605px;
+	left: 470px;
+}
+
+
+
+@keyframes birds{
+	0%{
+		top: 2000px;
+	}
+	100%{
+		top: 0px;
+	}
+}
